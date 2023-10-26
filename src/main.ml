@@ -1,6 +1,6 @@
 open Ast
 
-(** [parse s] parses [s] into an AST. *)
+(** [parse s] parses [s] into an AST. test full3*)
 let parse (s : string) : expr =
   let lexbuf = Lexing.from_string s in
   let ast = Parser.prog Lexer.read lexbuf in
